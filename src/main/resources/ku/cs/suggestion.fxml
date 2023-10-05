@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.login.SuggestionController">
+   <children>
+      <VBox layoutX="27.0" layoutY="154.0" prefHeight="277.0" prefWidth="752.0">
+         <children>
+            <Label text="1. Username  ไม่สามารถซ้ำกันได้ต้องมีมากกว่า 3 ตัวเเละต้องเป็นภาษาอังกฤษ Password ต้องเป็นภาษาอังกฤษต้องมากกว่า 6 เเละต้องไม่เกิน 20 ตัว">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="2. ก่อนทำการลงขายสินค้าทุกครั้งจะต้องสร้างร้านค้าเป็นของตัวเองก่อนโดยใช้ชื่อร้านค้ากับจำนวนสินค้าน้อยในคลัง">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="3. ข้อมูลสำหรับใส่เข้าไปที่ช่องรับค่าควรจะเป็นภาษาอังกฤษและไม่ควรที่จะพิมพ์สิ่งที่ไม่ใช่ตัวเลขลงไปในช่องใส่ตัวเลขราคาและไม่ควรจะติดลบ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="4. ยกเว้นเเต่ tracking number ที่สามารถใส่ได้ตามใจชอบเนื่องจากมีเลขแทร็กมาจากหลายเจ้า ผู้พัฒนาเลยให้อิสระกับผู้ใช้">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="5. ในช่องอัพโหลดรูปภาพไม่ควรที่จะอัพโหลดไฟล์ที่ไม่ใช่รูปภาพลงไปในโปรแกรมควรที่จะเป็น gif,jpg,png">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="6. ควรที่จะมีมารยาทในการใช้งานโปรแกรมเนื่องจากโปรแกรมถูกสร้างมาให้เป็นตลาดซื้อขายโดยที่แอดมินสามารถระงับการใช้งานผู้ใช้ได้">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="7. สามารถแก้ไขข้อมูลโปรไฟล์ได้ในหน้า &quot;My account&quot; และยังคงคอนเซ็ปข้อที่ 1 คือไม่สามารถใช้ซ้ำเเละจะต้องเป็นภาษาอังกฤษ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="8. และสามารถจัดเรียงลำดับของสินค้าได้จาก sort by,category,price range">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="9. สามารถลงขายสินค้าหรือว่าจัดการกับสินค้าที่ลงขายของตัวเองได้ในหน้า My store">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="10. สามารถ Review สินค้าของร้านค้าต่างๆได้โดยการให้ดาวได้ตั้งเเต่ 0-5 ดาวเเละไม่จำเป็นต้องใส่ Comment ก็สามารถ Review ได้">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="11. ในหน้าที่เข้าไปดูข้อมูลสินค้าสามารถกดที่ชื่อของร้านค้าเพื่อที่จะไปดูรายการสินค้าต่างๆของร้านค้าที่กดเข้าไปได้">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="12. เราสามารถเช็คข้อมูลการสั่งซื้อเเละใส่โค้ดโปรโมชั่นได้ในหน้าสรุปคำสั่งซื้อสินค้า">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="13. ในหน้า My store เราสามารถสร้างร้านค้าของตัวเองได้เเละสามารถแก้ไขสินค้าของเราได้เสมอและยังสามารถเช็คคนที่สั่งของได้อีกด้วย">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass></Label>
+            <Label text="14. ในหน้า order list เราสามารถเปลี่ยนจาก Order ไปเป็น Shipped ได้เมื่อเราใส่ Tracking number แล้ว">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-prompt" />
+                  <String fx:value="fill-text-color" />
+               </styleClass>
+            </Label>
+         </children>
+      </VBox>
+      <Text fill="#006bbb" layoutX="287.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-header" text="คำแนะนำการใช้งานโปรแกรม">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="373.0" layoutY="469.0" mnemonicParsing="false" onAction="#handleBackToLoginBtn" prefHeight="26.0" prefWidth="59.0" styleClass="button-submit" text="Back" />
+   </children>
+</AnchorPane>

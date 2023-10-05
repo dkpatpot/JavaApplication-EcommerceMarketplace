@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.marketplace.CreatePromotionController">
+   <children>
+      <Text fill="#006bbb" layoutX="202.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Promotion Code">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="183.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โปรโมชันส่วนลด X เปอร์เซ็นต์ เมื่อซื้อตั้งแต่ Y บาทขึ้นไป">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Button layoutX="651.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleConfirm2Btn" styleClass="button-submit" text="Create" />
+      <Button layoutX="370.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="26.0" prefWidth="59.0" styleClass="button-submit" text="Back" />
+      <TextField fx:id="minYBahtTextField" layoutX="274.0" layoutY="256.0" prefHeight="27.0" prefWidth="163.0" promptText="ขั้นต่ำ Y บาท" />
+      <TextField fx:id="discountXPercentTextField" layoutX="463.0" layoutY="256.0" prefHeight="27.0" prefWidth="163.0" promptText="ส่วนลด X percent" />
+      <TextField fx:id="minYQuantityTextField" layoutX="274.0" layoutY="342.0" prefHeight="27.0" prefWidth="163.0" promptText="ขั้นต่ำ Y ชิ้น" />
+      <TextField fx:id="discountXBahtTextField" layoutX="463.0" layoutY="342.0" prefHeight="27.0" prefWidth="163.0" promptText="ส่วนลด X บาท" />
+      <Text layoutX="183.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" โปรโมชันส่วนลด X บาท เมื่อซื้อสินค้าตั้งแต่ Y ชิ้นขึ้นไป">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Button layoutX="651.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleConfirm1Btn" styleClass="button-submit" text="Create" />
+      <TextField fx:id="codeTextField1" layoutX="91.0" layoutY="256.0" prefHeight="27.0" prefWidth="163.0" promptText="Code" />
+      <TextField fx:id="codeTextField2" layoutX="91.0" layoutY="342.0" prefHeight="27.0" prefWidth="163.0" promptText="Code" />
+   </children>
+</AnchorPane>

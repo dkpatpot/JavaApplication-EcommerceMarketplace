@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.user.RegisterController">
+   <children>
+      <Text fill="#006bbb" layoutX="355.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-prompt" text="Register">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="217.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Text layoutX="217.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <TextField fx:id="nameTextField" layoutX="215.0" layoutY="208.0" prefHeight="27.0" prefWidth="163.0" promptText="name" />
+      <Button layoutX="405.0" layoutY="422.0" mnemonicParsing="false" onAction="#handleRegisterBtn" styleClass="button-submit" text="Register" />
+      <ButtonBar layoutX="121.0" layoutY="493.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button layoutX="329.0" layoutY="422.0" mnemonicParsing="false" onAction="#handleBackToLoginBtn" prefHeight="26.0" prefWidth="59.0" styleClass="button-submit" text="Back" />
+      <PasswordField fx:id="passwordField" layoutX="214.0" layoutY="316.0" prefHeight="26.0" prefWidth="163.0" promptText="password" />
+      <TextField fx:id="usernameTextField" layoutX="214.0" layoutY="262.0" prefHeight="27.0" prefWidth="163.0" promptText="username" />
+      <Text layoutX="217.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Text layoutX="219.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm password">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <PasswordField fx:id="confirmPasswordField" layoutX="214.0" layoutY="370.0" prefHeight="26.0" prefWidth="163.0" promptText="confirm password" />
+      <Button layoutX="439.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleUploadAnImageBtn" prefHeight="29.0" prefWidth="118.0" styleClass="button-submit" text="Upload an image" />
+      <Circle fx:id="circleImage" fill="#f89b9b" layoutX="498.0" layoutY="276.0" radius="68.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

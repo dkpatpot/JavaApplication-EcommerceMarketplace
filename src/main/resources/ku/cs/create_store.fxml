@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.user.CreateStoreController">
+    <Text fill="#006bbb" layoutX="315.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create My Store">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Text>
+    <Text layoutX="317.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fill-color" text="Store's name : ">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Text>
+    <Button layoutX="400.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleCreateStore" styleClass="button-submit" text="สร้างร้านค้า" />
+    <Button layoutX="324.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="26.0" prefWidth="59.0" styleClass="button-submit" text="Back" />
+    <TextField fx:id="storeNameTextField" layoutX="318.0" layoutY="287.0" prefHeight="27.0" prefWidth="163.0" promptText="ชื่อร้านค้า" />
+</AnchorPane>

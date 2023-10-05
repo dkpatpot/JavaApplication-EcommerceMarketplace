@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.marketplace.ProductDetailController">
+   <children>
+      <ImageView fx:id="productImage" fitHeight="200.0" fitWidth="200.0" layoutX="52.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/productimage.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="productNameLabel" layoutX="296.0" layoutY="44.0" styleClass="text-prompt" text="productNameLabel" textFill="#c848b9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="73.0" prefHeight="29.0" prefWidth="63.0" styleClass="text-prompt" text="Price :" textFill="#006bbb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="productPriceLabel" layoutX="353.0" layoutY="78.0" styleClass="text-prompt" text="productPriceLabel" textFill="#75bde0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="102.0" prefHeight="29.0" prefWidth="96.0" styleClass="text-prompt" text="Quantity :" textFill="#006bbb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="392.0" layoutY="102.0" prefHeight="29.0" prefWidth="259.0">
+         <children>
+            <SVGPath content="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" onMouseClicked="#handleMinusBtn">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </SVGPath>
+            <Pane prefHeight="29.0" prefWidth="10.0" />
+            <Label fx:id="productQuantityLabel" alignment="CENTER" prefHeight="29.0" prefWidth="37.0" styleClass="text-prompt" text="productQuantityLabel" textFill="#75bde0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="29.0" prefWidth="10.0" />
+            <SVGPath content="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" onMouseClicked="#handlePlusBtn">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </SVGPath>
+            <Label fx:id="availableTexLabel" prefHeight="29.0" prefWidth="73.0" styleClass="text-prompt" text="  Available" textFill="#8a8a8a">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="4.0" />
+               </padding>
+            </Label>
+            <Label fx:id="availableLabel" prefHeight="32.0" prefWidth="39.0" styleClass="text-prompt" text="availableLabel" textFill="#8a8a8a">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets top="4.0" />
+               </padding>
+            </Label>
+            <SVGPath fx:id="availableSVGPath" />
+         </children>
+      </HBox>
+      <Button layoutX="292.0" layoutY="189.0" mnemonicParsing="false" onAction="#handlePurchaseBtn" styleClass="button-submit" text="Purchase" />
+      <Label fx:id="storeNameLabel" layoutX="97.0" layoutY="269.0" onMouseClicked="#handleSellerStore" styleClass="text-prompt" text="storeNameLabel" textFill="#75bde0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <StackPane fx:id="reviewStackPane" layoutX="52.0" layoutY="337.0" prefHeight="161.0" prefWidth="692.0">
+         <children>
+            <ListView fx:id="reviewListView" prefHeight="165.0" prefWidth="703.0" />
+         </children></StackPane>
+      <Label layoutX="52.0" layoutY="307.0" styleClass="text-prompt" text="Review" textFill="#006bbb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reviewTextField" layoutX="52.0" layoutY="532.0" prefHeight="29.0" prefWidth="643.0" promptText="Write your comment." />
+      <Label layoutX="52.0" layoutY="506.0" styleClass="text-prompt" text="Comment" textFill="#006bbb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="697.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleSendBtn" styleClass="button-submit" text="Send" AnchorPane.rightAnchor="52.0" />
+      <SVGPath fx:id="star1" content="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" layoutX="140.0" layoutY="504.0" onMouseClicked="#handleStarOne" />
+      <SVGPath fx:id="star2" content="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" layoutX="160.0" layoutY="504.0" onMouseClicked="#handleStarTwo" />
+      <SVGPath fx:id="star3" content="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" layoutX="180.0" layoutY="504.0" onMouseClicked="#handleStarThree" />
+      <SVGPath fx:id="star4" content="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" layoutX="200.0" layoutY="504.0" onMouseClicked="#handleStarFour" />
+      <SVGPath fx:id="star5" content="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" layoutX="220.0" layoutY="504.0" onMouseClicked="#handleStarFive" />
+      <Button layoutX="636.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleReportProductBtn" styleClass="button-purple" text="Report" />
+      <Button layoutX="701.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleBackToMarketplaceBtn" styleClass="button-submit" text="Back" />
+      <Circle fx:id="circle" fill="WHITE" layoutX="71.0" layoutY="280.0" radius="19.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label layoutX="276.0" layoutY="501.0" prefHeight="30.0" prefWidth="71.0" styleClass="text-prompt" text="Rating :" textFill="#006bbb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="130.0" prefHeight="30.0" prefWidth="74.0" styleClass="text-prompt" text="Details :" textFill="#006bbb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="productDetailLabel" layoutX="295.0" layoutY="160.0" prefHeight="22.0" prefWidth="451.0" text="productDetailLabel">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-text-color" />
+         </styleClass>
+      </Label>
+      <Label fx:id="averageRatingLabel" layoutX="328.0" layoutY="506.0" styleClass="fill-text-color" text="averageRatingLabel" />
+      <Label layoutX="457.0" layoutY="506.0" styleClass="text-prompt" text="Number of Reviewer :" textFill="#006bbb" />
+      <Label fx:id="numberOfReviewerLabel" layoutX="596.0" layoutY="507.0" styleClass="fill-text-color" text="numberOfReviewerLabel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,215 @@
+@font-face {
+    font-family: Prompt-Regular;
+    src: url("Prompt-Regular.ttf");
+}
+
+.fill-color {
+    -fx-fill: black;
+}
+
+.fill-text-color {
+    -fx-text-fill: black;
+}
+
+.fill-prompt-text-color {
+    -fx-prompt-text-fill: black;
+}
+
+.bg
+{
+    -fx-background-color: #FFFAFA;
+}
+
+.text-prompt {
+    -fx-font-family: "Prompt-Regular";
+    -fx-font-size: 12;
+}
+.text-header {
+    -fx-font-family: "Prompt-Regular";
+    -fx-font-size: 20;
+}
+.button-submit
+{
+    -fx-border-color: #F89B9B;
+    -fx-background-color: white;
+    -fx-text-fill: #F89B9B;
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.button-submit:hover
+{
+    -fx-border-color: #EE8980;
+    -fx-background-color: #EE8980;
+    -fx-text-fill: linear-gradient(to right,white,white);
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.button-green
+{
+    -fx-border-color: #5cb85c;
+    -fx-background-color: transparent;
+    -fx-text-fill: #5cb85c;
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.button-green:hover
+{
+    -fx-border-color: #5cb85c;
+    -fx-background-color: #5cb85c;
+    -fx-text-fill: linear-gradient(to right,white,white);
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.text-field {
+    -fx-border-color: white;
+    -fx-background-color: white;
+    -fx-text-fill: linear-gradient(to right,#984063,#984063);
+    -fx-background-radius: 35px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 35px;
+    -fx-border-color: #C5C5C5;
+}
+
+.button-purple {
+    -fx-border-color: #C848B9;
+    -fx-background-color: white;
+    -fx-text-fill: #C848B9;
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.button-purple:hover {
+    -fx-border-color: #C848B9;
+    -fx-background-color: #C848B9;
+    -fx-text-fill: white;
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.button-pink {
+    -fx-border-color: #F962A7;
+    -fx-background-color: white;
+    -fx-text-fill: #F962A7;
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.button-pink:hover
+{
+    -fx-border-color: #F962A7;
+    -fx-background-color: #F962A7;
+    -fx-text-fill: linear-gradient(to right,white,white);
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.product {
+    -fx-background-radius: 10;
+    -fx-background-color: white;
+}
+
+.transparent {
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.shadow {
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0, 0.0, 0.0, 10.0);
+}
+
+.combo-box
+{
+    -fx-background: white;
+    -fx-background-color: white;
+    -fx-border-radius: 20;
+    -fx-border-color: #EE8980;
+    -fx-background-radius: 20;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.button-mode {
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.button-mode:hover
+{
+    -fx-border-color: black;
+    -fx-background-color: black;
+    -fx-text-fill: linear-gradient(to right,white,white);
+    -fx-background-radius: 25px;
+    -fx-color-label-visible: white;
+    -fx-border-radius: 25px;
+}
+
+.radio-button
+{
+    -fx-text-fill: black;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.stack-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.stack-pane {
+    -fx-background-color: transparent;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-view:even {
+    -fx-background-color: transparent;
+}
+
+.list-view:filled:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+

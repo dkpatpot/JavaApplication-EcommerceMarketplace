@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.marketplace.AddProductController">
+   <children>
+      <TextField fx:id="productNameTextField" layoutX="254.0" layoutY="199.0" promptText="ชื่อสินค้า" />
+      <TextField fx:id="productPriceTextField" layoutX="254.0" layoutY="244.0" promptText="ราคาสินค้า" />
+      <TextField fx:id="quantityTextField" layoutX="254.0" layoutY="289.0" promptText="จำนวนสินค้าในคลัง" />
+      <Button layoutX="399.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleAddProductBtn" prefHeight="29.0" prefWidth="95.0" styleClass="button-submit" text="Add product" />
+      <ImageView fx:id="productImageView" fitHeight="125.0" fitWidth="125.0" layoutX="493.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/productimage.png" />
+         </image>
+      </ImageView>
+      <Text fill="#006bbb" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-prompt" text="Add your product" textAlignment="CENTER" wrappingWidth="800.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product's name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Text layoutX="146.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product's price :">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Text layoutX="184.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity :">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Text layoutX="143.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product's detail :">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <Button layoutX="525.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleUploadProductImageBtn" prefHeight="29.0" prefWidth="61.0" styleClass="button-submit" text="Browse" />
+      <Button layoutX="338.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleBackToStoreBtn" styleClass="button-submit" text="Back" />
+      <Rectangle fx:id="rectangleImage" arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="125.0" layoutX="493.0" layoutY="208.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+      <ComboBox fx:id="categoryComboBox" layoutX="255.0" layoutY="375.0" onAction="#chooseCategory" prefHeight="29.0" prefWidth="161.0" promptText="ประเภทสินค้า" stylesheets="@styles/combo-box-list-view.css" />
+      <Text layoutX="179.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category :">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="text-prompt" />
+            <String fx:value="fill-color" />
+         </styleClass>
+      </Text>
+      <TextField fx:id="productDetailTextField" layoutX="254.0" layoutY="333.0" promptText="รายละเอียดสินค้า" />
+   </children>
+</AnchorPane>

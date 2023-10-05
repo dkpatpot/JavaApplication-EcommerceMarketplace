@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.marketplace.EditProductController">
+   <children>
+      <Text fill="#006bbb" layoutX="485.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-prompt" text="Edit Product">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="productNameTextField" layoutX="454.0" layoutY="193.0" prefHeight="27.0" prefWidth="163.0" promptText="ชื่อสินค้า" />
+      <TextField fx:id="productPriceTextField" layoutX="454.0" layoutY="235.0" prefHeight="27.0" prefWidth="163.0" promptText="ราคาสินค้า" />
+      <Button layoutX="214.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleUploadAnImageBtn" prefHeight="29.0" prefWidth="118.0" styleClass="button-submit" text="Upload an image" />
+      <Label layoutX="410.0" layoutY="196.0" styleClass="text-prompt" text="Name :" textFill="#75bde0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="413.0" layoutY="239.0" styleClass="text-prompt" text="Price :" textFill="#75bde0" />
+      <Button layoutX="449.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleChangeBtn" prefHeight="30.0" prefWidth="65.0" styleClass="button-submit" text="Change" />
+      <ImageView fx:id="productImage" fitHeight="200.0" fitWidth="200.0" layoutX="173.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/productimage.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="527.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleBackToStoreBtn" prefHeight="30.0" prefWidth="46.0" styleClass="button-pink" text="Back" />
+      <Text fill="#006bbb" layoutX="475.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-prompt" text="เพิ่มจำนวนสินค้า">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="addQuantityLabel" layoutX="415.0" layoutY="432.0" prefHeight="27.0" prefWidth="163.0" promptText="จำนวนสินค้าที่จะเพิ่ม" />
+      <Label layoutX="437.0" layoutY="396.0" styleClass="text-prompt" text="จำนวนสินค้าในคลัง" textFill="#75bde0" />
+      <Label fx:id="nowQuantityLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="538.0" layoutY="396.0" prefHeight="19.0" prefWidth="54.0" styleClass="text-prompt" text="nowQuantityLabel" textAlignment="CENTER" textFill="#75bde0" />
+      <Button layoutX="587.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleAddBtn" prefHeight="30.0" prefWidth="40.0" styleClass="button-submit" text="บวก" />
+      <ComboBox fx:id="categoryComboBox" layoutX="455.0" layoutY="275.0" onAction="#chooseCategory" prefWidth="150.0" promptText="Category" stylesheets="@styles/combo-box-list-view.css" />
+      <Label layoutX="387.0" layoutY="279.0" styleClass="text-prompt" text="Category :" textFill="#75bde0" />
+   </children>
+</AnchorPane>

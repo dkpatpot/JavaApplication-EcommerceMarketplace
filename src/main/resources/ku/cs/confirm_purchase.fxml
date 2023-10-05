@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="600" prefWidth="800" styleClass="text-prompt, bg" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.kanison.controllers.marketplace.ConfirmPurchaseController">
+   <children>
+      <Text fill="#006bbb" layoutX="350.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-prompt" text="สรุปรายการคำสั่งซื้อ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="417.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleConfirmBtn" styleClass="button-pink" text="Confirm" />
+      <Button layoutX="320.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleBackBtn" prefHeight="26.0" prefWidth="59.0" styleClass="button-submit" text="Back" />
+      <VBox layoutX="240.0" layoutY="200.0" prefHeight="213.0" prefWidth="320.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="80.0">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="167.0">
+                     <children>
+                        <Label fx:id="productName" styleClass="text-prompt" text="productName" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="119.0">
+                     <children>
+                        <Label fx:id="quantity" styleClass="text-prompt" text="quantity" textAlignment="CENTER" textFill="#006bbb">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="34.0">
+                     <children>
+                        <Label styleClass="text-prompt" text="ชิ้น" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="80.0">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="167.0">
+                     <children>
+                        <Label styleClass="text-prompt" text="ราคาชิ้นละ" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="119.0">
+                     <children>
+                        <Label fx:id="price" styleClass="text-prompt" text="price" textAlignment="CENTER" textFill="#006bbb">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="34.0">
+                     <children>
+                        <Label styleClass="text-prompt" text="บาท" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="80.0">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="167.0">
+                     <children>
+                        <Label styleClass="text-prompt" text="ยอดรวม" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="119.0">
+                     <children>
+                        <Label fx:id="totalPrice" styleClass="text-prompt" text="totalPrice" textAlignment="CENTER" textFill="#c848b9">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="34.0">
+                     <children>
+                        <Label styleClass="text-prompt" text="บาท" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="167.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="125.0" styleClass="text-prompt" text="กรอกโค้ด" textFill="#75bde0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </Label>
+                  <HBox prefHeight="42.0" prefWidth="208.0">
+                     <children>
+                        <TextField fx:id="promotionCodeTextField" alignment="TOP_LEFT" prefHeight="30.0" prefWidth="184.0" promptText="โค้ดโปรโมชั่น" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="41.0" prefWidth="73.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleUseCodeBtn" prefHeight="29.0" prefWidth="43.0" styleClass="button-pink" text="ใช้" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="95.0" prefHeight="42.0" prefWidth="80.0">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="167.0">
+                     <children>
+                        <Label styleClass="text-prompt" text="จำนวนเงินที่ต้องชำระ" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="119.0">
+                     <children>
+                        <Label fx:id="paymentAmountLabel" styleClass="text-prompt" text="paymentAmount" textAlignment="CENTER" textFill="#c848b9">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="34.0">
+                     <children>
+                        <Label styleClass="text-prompt" text="บาท" textFill="#75bde0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

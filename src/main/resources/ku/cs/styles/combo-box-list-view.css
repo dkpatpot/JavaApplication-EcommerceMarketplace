@@ -1,0 +1,38 @@
+.list-cell:empty {
+    -fx-background-color: -fx-control-inner-background;
+}
+.list-cell {
+    -fx-text-fill: #212121;
+}
+.list-cell:odd{
+    -fx-background-color: white;
+}
+
+.list-view:focused{
+    -fx-background-color: -fx-box-border,-fx-box-border,white;
+}
+.list-view:focused .list-cell:filled:selected,
+.list-view:focused .list-cell:filled:selected:hover,
+.list-view:focused .list-cell:filled:focused:selected,
+.list-view:focused .list-cell:odd:filled:selected:focused:hover{
+    -fx-background-color: -fx-box-border, rgba(205,205,205,1);
+}
+.list-view:focused .list-cell:focused {
+    -fx-background-color: -fx-box-border, white;
+}
+.list-view .list-cell:hover:empty,
+.list-view .list-cell:odd:hover:empty {
+    -fx-background-color: white;
+}
+.list-view .list-cell:hover,
+.list-view .list-cell:odd:hover,
+.list-view:focused .list-cell:odd:focused:hover,
+.list-view:focused .list-cell:focused:hover{
+    -fx-background-color: -fx-box-border,rgba(231,231,231,1);
+}
+.list-view .list-cell:odd:focused:hover{
+    -fx-background-color: -fx-box-border,rgba(205,205,205,1);
+}
+.list-view .list-cell:selected{
+    -fx-background-color: rgba(205,205,205,1);
+}
